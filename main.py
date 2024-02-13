@@ -22,8 +22,8 @@ def enter_urls():
     
     driver = webdriver.Chrome(options=chrome_options)
     
-    while True:
-        try:
+    try:
+        while True:
             with open("D:\VSprojects\Python\PySearching\websites.txt", "r") as file:
                 for url in file.readlines():
                     if stop:
@@ -32,11 +32,12 @@ def enter_urls():
                         return
                     driver.get(url.strip())
                     nOpen += 1
+                    print(url)
                     sleep(15)
-        except Exception as e:
-            print(f"Erro: {e}")
-        running = False
-        driver.quit()
+    except Exception as e:
+        print(f"Erro: {e}")
+    running = False
+    driver.quit()
 
 layout = [
     [sg.Text('', key='state')],
