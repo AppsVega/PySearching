@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 import PySimpleGUI as sg
 import threading
+#.\venv\Scripts\activate
 #pyinstaller --onefile --add-data "websites.txt;." --noconsole main.py
 stop = False
 nOpen = 0
@@ -31,7 +32,7 @@ def enter_urls():
                         return
                     driver.get(url.strip())
                     nOpen += 1
-                    sleep(3)
+                    sleep(15)
         except Exception as e:
             print(f"Erro: {e}")
         running = False
