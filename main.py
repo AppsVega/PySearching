@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 import PySimpleGUI as sg
 import threading
-
+#pyinstaller --onefile --add-data "websites.txt;." --noconsole main.py
 stop = False
 nOpen = 0
 running = False
