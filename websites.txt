@@ -1,6 +1,5 @@
 https://www.w3schools.com/python/default.asp
 https://www.w3schools.com/python/python_intro.asp
-https://www.w3schools.com/python/python_intro.asp
 https://www.w3schools.com/python/python_getstarted.asp
 https://www.w3schools.com/python/python_syntax.asp
 https://www.w3schools.com/python/python_comments.asp
