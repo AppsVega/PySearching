@@ -32,7 +32,7 @@ def enter_urls():
                         return
                     driver.get(url.strip())
                     nOpen += 1
-                    print(url)
+                    print(url.strip())
                     sleep(15)
     except Exception as e:
         print(f"Erro: {e}")
